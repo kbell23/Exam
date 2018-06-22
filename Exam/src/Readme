@@ -1,0 +1,50 @@
+Names: Hassan Murtaza, Kevin Bell, Daniel Monarrez
+NetIds: hmurta3, kbell23,dmonar2
+
+
+
+To Build:
+make
+
+To Run, choose one of the following:
+java ExamBuilder
+java ExamTaker
+java ExamGrader
+
+
+
+HW4
+
+ExamBuilder – Used by an instructor to create and modify exams.
+ExamTaker – Used by students to take an exam and record their answers.
+ExamGrader – Used by an instructor to evaluate students’ answers and determine scores.
+
+ExamBuilder
+
+o Present the Instructor with a menu of available choices.
+o Read the Instructor’s choice, and perform the requested action.
+o Repeat from step 1 until the Instructor selects “Quit” ( or something to that effect. )
+o The selected choices shall include the following ( at a minimum. )
+o Load a saved Exam from a file.
+o Add questions interactively.
+o Remove questions interactively.
+o Reorder questions, and/or answers.
+o Print the Exam, to the screen or to a file suitable for hard-copy printing.
+o Save the Exam, using the file format given in HW3 or a minor variation thereof.
+o Quit
+
+ExamTaker
+
+o Get student information.
+o Load an arbitrary Exam file, following the file format specified in HW3 ( as modified above ) or a close variation thereof as agreed to by your group.
+o Get answers from the student:
+o Allow students to skip answers, and come back to them later. ( You may need to resolve what happens if a student wants to leave one or more questions unanswered. )
+o Allow students to change their answers.
+
+ExamGrader
+
+o Load up an Exam file and an Answer file, confirming that they are a matched set.
+o If only an Answer file is provided, perhaps as an optional command-line argument, then automatically load up the corresponding Exam file.
+o Evaluate the answers, and report the results to the screen.
+o Store the results to a CSV ( comma separated values ) file:
+o Student identity, total score, list of comma-separated scores for each question.
